@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="with=device-width, intial-scale=1.0"> 
+	<title>LITODESTI</title> 
+</head> 
+<body background=".png"> 	
+<style type="text/css"> 
+    select#portfolio { font-size: 20px; color: #FF9800; background: #000000; width: 250px;} 
+	h1{font-size: 20px; color: #FF9800;}  h2{font-size: 20px; color: #FF9800;} 	
+</style> 
+<form name="webpage"> 
+<center>    
+
+    <h1>
+		<br><br>
+	SELECT YOUR DISTINATION POINT.	
+	</h1>	
+<select name="portfolio" id="portfolio"> 
+		<option href="#" value="" selected>SELECT</option>
+	    <option href="#" value="LITOMG.html">
+		1.MAIN GATE</option> 
+		<option href="#" value="LITOCV.html">
+		2.C.V.RAMAN</option> 
+		<option href="#" value="LITOAU.html">
+		3.AUDITORIUM</option> 
+		
+		
+</select> 
+<br><br>	
+
+	
+	<img src="change.jpg" alt="bg image" width="300" height="350" align="center"> 
+	
+	
+</center>
+</form> 
+<script type ="text/javascript"> var urlMenu = document.getElementById('portfolio'); urlMenu.onchange = function() { var userOption = this.options[this.selectedIndex]; 
+	if (userOption.value != "nothing") { window.open(userOption.value, "HTML CSS javascript", ""); } } 
+</script> 
+</body> 
+</html>
