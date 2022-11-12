@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="with=device-width, intial-scale=1.0"> 
+	<title>SELECTION STARTING PAGE</title> 
+</head> 
+<body background="dods.jpg"> 	
+	<style type="text/css"> select#portfolio { font-size: 20px; color: #FF9800; background: #0c0101; width: 225px;} h1{font-size: 20px; color: #f77700;}  h2{font-size: 60px; color: #FF9800;} 	
+</style> 
+<form name="webpage"> 
+<center>
+<h1>
+	<br><br>
+SELECT YOUR STARTING POINT.
+</h1>
+
+	<select name="portfolio" id="portfolio"> 
+		<option href="#" value="" selected>SELECT</option>
+		<option href="#" value="MGTODESTI.html">
+		1. MAIN GATE</option> 
+		<option href="#" value="CVTODESTI.html">
+		2. C.V.RAMAN</option> 
+		<option href="#" value="AUTODESTI.html">
+		3. AUDITORIUM</option> 
+		<option href="#" value="LITODESTI.html">
+		4. LIBRARY</option> 
+		
+		
+	</select> 
+	<br><br>	
+<img src="change.jpg" alt="bg image" width="300" height="350"> 
+</center>
+</form> 
+<script type ="text/javascript"> var urlMenu = document.getElementById('portfolio'); urlMenu.onchange = function() { var userOption = this.options[this.selectedIndex]; 
+	if (userOption.value != "nothing") { window.open(userOption.value, "HTML CSS javascript", ""); } } 
+</script> 
+</body> 
+</html>
